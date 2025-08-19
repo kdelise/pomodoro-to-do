@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./pomodoro_todo.css" />
+    <title>Pomodoro App</title>
+  </head>
+  <body>
+    <div class="app-wrapper">
+      <div class="pomodoro-container">
+          <h1>Pomodoro</h1>
+          <div class="message">Press Start to Begin</div>
+          <div class="timer-display">
+              <span id="minutes">25</span>:<span id="seconds">00</span>
+          </div>
+          <div class="timer-bar-container">
+              <div class="timer-bar"></div>
+          </div>
+          <div class="buttons">
+              <button id="start-button">Start</button>
+              <button id="pause-button">Pause</button>
+              <button id="reset-button">Reset</button>
+          </div>
+      </div>
+      
+      <div class="todo-container">
+          <h2>To-Do List</h2>
+          <div class="add-task-container">
+              <input type="text" id="task-input" placeholder="Enter task">
+              <button id="add-task-button">Add</button>
+          </div>
+          <ul id="task-list">
+              </ul>
+      </div>
+  </div>
+  
+  <script src="pomodoro_todo.js"></script>
+</body>
+</html>
